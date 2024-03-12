@@ -1,0 +1,150 @@
+#menu {
+    position: fixed; /* Đặt thanh menu ở vị trí cố định */
+    width: 97.5%; /* Chiều rộng toàn màn hình */
+    height: 6%;
+    top: 1px; /* Đặt thanh menu ở đầu trang */
+    border-radius: 20px; /* bo goc thanh menu */
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5%;
+    background-color: #666565;
+}
+#menu a {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#menu img {
+    /* logo menu */
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 100%;
+    width: auto;
+}
+#menu ul {
+    display: flex;
+}
+#menu ul li {
+    list-style-type: none;
+}
+
+#menu2 {
+    position: fixed; /* Đặt thanh menu ở vị trí cố định */
+    width: 97.5%; /* Chiều rộng toàn màn hình */
+    height: 2%;
+    top: 95.5%; /* Đặt thanh menu ở đầu trang */
+    border-radius: 20px; /* bo goc thanh menu */
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5%;
+    background-color: #666565;
+}
+#menu2 a {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#menu2 ul {
+    display: flex;
+    margin-top: 0px;
+    margin-left: 58%;
+}
+#menu2 ul li {
+    list-style-type: none;
+}
+
+h1 {
+    margin-top: 100px;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 120%;
+    font-weight: bold;
+}
+#home:hover, #search:hover, #test:hover {
+    color: rgba(255, 0, 0, 0.753);
+}   
+
+#box { 
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#box a{
+    margin-right: 50px;
+    background-color: rgb(84, 152, 231);
+    border-radius: 5px;
+}
+
+#search {
+    transition: width 0.7s ease-in-out;
+}
+
+img{
+    margin: 10px;
+    margin-top: 10px;
+    width: 300px; /* Chiều rộng cố định */
+    height: 168px; /* Chiều cao cố định */
+    object-fit: contain; /* Giữ nguyên tỷ lệ khung hình */
+    transition: transform 0.2s; /* Thời gian chuyển đổi */
+}
+img:hover {
+    transform: scale(1.5); /* Phóng to 1.5 lần khi di chuột vào */
+}
+
+/* can giua */
+#search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+#image-random {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+}
+/* -------- */
+
+body.dark {
+    background-color: #666565;
+    color: #f0ca20;
+}
+#menu.den {
+    background-color: #5e9caa;
+}
+#menu2.den2 {
+    background-color: #5e9caa;
+}
+#menu.dark {
+    background-color: #333; /* Màu nền cho chế độ tối */
+}
+
+
+/* Sai 
+#swtext.vang {
+    color: #ffffff;
+}
+ */
+
+/* nut dark mode tren thanh menu */
+#dark-mode-switch { 
+    font-size: 120%;
+    font-weight: bold;
+}
+
+
+#Contact {
+    color: rgb(0, 0, 0);
+}
+
+i {
+    color: rgb(255, 255, 255);
+}
+i.sw {
+    color: rgb(255, 137, 34);
+}

@@ -1,0 +1,106 @@
+img {
+    /* khoang cach giua cac anh */
+    margin: 1%; 
+}
+#menu {
+    position: fixed; /* Đặt thanh menu ở vị trí cố định */
+    width: 97.5%; /* Chiều rộng toàn màn hình */
+    height: 6%;
+    top: 0; /* Đặt thanh menu ở đầu trang */
+    border-radius: 20px; /* bo goc thanh menu */
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5%;
+    background-color: #5a5454;
+}
+#menu a {
+    margin-right: 40px;
+}
+
+#imageContainer {
+    margin-top: 50px; /* Thay đổi giá trị này cho phù hợp với chiều cao của thanh menu */
+    text-align: center;
+}
+#imageContainer img {
+    width: 300px; /* Chiều rộng cố định */
+    height: 168px; /* Chiều cao cố định */
+    object-fit: contain; /* Giữ nguyên tỷ lệ khung hình */
+    transition: transform 0.2s; /* Thời gian chuyển đổi */
+}
+
+#imageContainer img:hover {
+    transform: scale(1.5); /* Phóng to 1.5 lần khi di chuột vào */
+}
+h1 {
+    margin-top: 100px;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 120%;
+    font-weight: bold;
+}
+a:hover {
+    color: rgba(255, 0, 0, 0.753);
+}
+
+li {
+    position: relative;
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+}
+li::after {
+    border-radius: 40px;
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 2px;
+    top: 90%;
+    left: 0;
+    transition: transform 0.5s;
+    transform: scale(0);
+    transform-origin: right;
+    background-color: rgb(13, 255, 0);
+}
+li:hover {
+    color: aqua;
+}
+li:hover::after {
+    transform: scale(1);
+    transform-origin: left;
+}
+
+#menu img {
+    /* logo menu */
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 100%;
+    width: auto;
+}
+#menu ul {
+    display: flex;
+}
+#menu ul li {
+    list-style-type: none;
+}
+
+
+
+body.dark {
+    background-color: #666565;
+    color: #f0ca20;
+}
+#menu.den {
+    background-color: #5e9caa;
+}
+#swtext.vang {
+    color: #ffffff;
+}
+
+/* nut dark mode tren thanh menu */
+#dark-mode-switch { 
+    font-size: 120%;
+    font-weight: bold;
+}
